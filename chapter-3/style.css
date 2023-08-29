@@ -72,6 +72,7 @@
     text-transform: uppercase;
 }
 /* end mainscreen */
+
 /* section game options */
 .second-section {
     background-image: url(assets/the-games-bg.jpg);
@@ -111,3 +112,111 @@ div.slideshow {
     width: 60rem;
 }
 /* end section game options */
+
+/* section game features */
+.third-section {
+    background-image: url(assets/features.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 135vh;
+}
+
+.box-features {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12rem;
+    margin-left: 55rem;
+    margin-right: 10rem;
+    padding-bottom: 15rem;
+    color: white;
+    font-family: Arial;
+}
+
+.title-features {
+    margin-bottom: 3rem;
+    font-weight: 100;
+}
+
+.title-features h3 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.title-features h2 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+.step {
+    position: relative;
+    z-index: 999;
+    min-height: 1em;
+    color: white;
+}
+
+.title {
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #FFB548;
+}
+
+.caption {
+    font-size: 1em;
+}
+
+.step + .step {
+    margin-top: 1.5em
+}
+
+.step > div:first-child {
+    position: static;
+    height: 0;
+}
+
+.step > div:not(:first-child) {
+    margin-left: 1.5em;
+    padding-left: 1em;
+}
+
+/* Circle */
+.circle {
+    background: none;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1em;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+/* Vertical Line */
+.circle:after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: -34px;
+    right: 50%;
+    bottom: 1px;
+    left: 50%;
+    /* height: 100%; */
+    width: 1.5px;
+    transform: scale(1, 2);
+    transform-origin: 50% -100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.step:last-child .circle:after {
+    display: none
+}
+
+.step:nth-child(3) .circle:after {
+    display: none
+}
+
+.step.step-active .circle {
+    background-color: #ffffff;
+}
+/* end game features */
