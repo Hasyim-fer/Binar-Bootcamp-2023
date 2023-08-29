@@ -1,0 +1,222 @@
+/* section main screen */
+.first-section {
+    background-image: url(assets/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 135.5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar-custom {
+    background-color: #000000c0;
+    text-transform: uppercase;
+    width: auto;
+    font-size: 15px;
+}
+
+.title-custom:hover {
+    color: #FFB548 !important;
+}
+
+.content-first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.content-first-section h1 {
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    margin-top: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.content-first-section p {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.btn-custom {
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #FFB548;
+    padding: 0.5em 3.5em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px 5px #0000005e;
+}
+
+.btn-custom:hover {
+    background-color: #ffa011;
+    color: white;
+}
+
+.btn-custom:active {
+    background-color: black;
+    color: #FFB548;
+    box-shadow: none;
+}
+.scroll-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 8rem;
+    color: white;
+    text-transform: uppercase;
+}
+/* end mainscreen */
+
+/* section game options */
+.second-section {
+    background-image: url(assets/the-games-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16rem 6rem 0rem 6rem;
+}
+
+.title-the-games {
+    color: white;
+}
+
+.title-the-games h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.title-the-games p {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+}
+
+div.slideshow {
+    margin-top: 4.1em;
+}
+
+.carousel-custom img {
+    height: 29rem;
+    padding: 0em 6em;
+    width: 50rem;
+}
+
+.slideshow-custom {
+    width: 60rem;
+}
+/* end section game options */
+
+/* section game features */
+.third-section {
+    background-image: url(assets/features.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 135vh;
+}
+
+.box-features {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12rem;
+    margin-left: 55rem;
+    margin-right: 10rem;
+    padding-bottom: 15rem;
+    color: white;
+    font-family: Arial;
+}
+
+.title-features {
+    margin-bottom: 3rem;
+    font-weight: 100;
+}
+
+.title-features h3 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.title-features h2 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+.step {
+    position: relative;
+    z-index: 999;
+    min-height: 1em;
+    color: white;
+}
+
+.title {
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #FFB548;
+}
+
+.caption {
+    font-size: 1em;
+}
+
+.step + .step {
+    margin-top: 1.5em
+}
+
+.step > div:first-child {
+    position: static;
+    height: 0;
+}
+
+.step > div:not(:first-child) {
+    margin-left: 1.5em;
+    padding-left: 1em;
+}
+
+/* Circle */
+.circle {
+    background: none;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1em;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+/* Vertical Line */
+.circle:after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: -34px;
+    right: 50%;
+    bottom: 1px;
+    left: 50%;
+    /* height: 100%; */
+    width: 1.5px;
+    transform: scale(1, 2);
+    transform-origin: 50% -100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.step:last-child .circle:after {
+    display: none
+}
+
+.step:nth-child(3) .circle:after {
+    display: none
+}
+
+.step.step-active .circle {
+    background-color: #ffffff;
+}
+/* end game features */

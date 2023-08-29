@@ -1,14 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chapter 3</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
-<body>
-    <div>Chapter 3</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <!--section mainscreen-->
+    <section class="first-section">
+      <nav class="navbar navbar-expand-lg navbar-custom navbar-dark py-4">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand pe-5 me-5 col-2 title-custom" href="#">Logo</a>
+          <button 
+          class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-text" id="navbarNavAltMarkup">
+            <div class="navbar-nav col-10">
+              <a class="nav-link pe-4 title-custom" aria-current="page" href="#">home</a>
+              <a class="nav-link pe-4 title-custom" href="#">work</a>
+              <a class="nav-link pe-4 title-custom" href="#">contact</a>
+              <a class="nav-link pe-4 title-custom" href="#">about me</a>
+            </div>
+            <div class="navbar-nav">
+              <a class="nav-link pe-4 title-custom" href="#">sign up</a>
+              <a class="nav-link pe-4 title-custom" href="#">sign in</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="content-first-section">
+        <h1>play traditional game</h1>
+        <p>experience new traditional game play</p>
+        <button type="button" class="btn-custom">trial</button>
+      </div>
+      <div class="scroll-icon">
+        <p>the story</p>
+        <img src="assets/scroll-down.svg" alt="">
+      </div>
+    </section>
+    <!--end section mainscreen-->
+    <!--section gameplay option-->
+    <section class="second-section">
+      <div class="title-the-games">
+        <p>what's so special?</p>
+        <h2>the games</h2>
+      </div>
+      <div class="slideshow">
+        <div id="carouselExampleIndicators" class="carousel slide slideshow-custom">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active carousel-custom">
+              <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item carousel-custom">
+              <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item carousel-custom">
+              <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--end section gameplay option-->
+    <!-- section game feature-->
+    <section class="third-section">
+      <div class="box-features">
+        <div class="title-features">
+          <h3>what's so special?</h3>
+          <h2>features</h2>
+        </div>
+        <div class="step step-active">
+          <div>
+            <div class="circle"><i class="fa fa-check"></i></div>
+          </div>
+          <div>
+            <h3 class="title">traditional games</h3>
+            <p class="caption">If you miss your childhood, we provide<br/>many traditional games here</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <div class="circle"></div>
+          </div>
+          <div>
+            <h3 class="title">game suit</h3>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <div class="circle"></div>
+          </div>
+          <div>
+            <h3 class="title">tbd</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
