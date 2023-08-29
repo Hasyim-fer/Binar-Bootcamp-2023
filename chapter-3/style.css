@@ -1,3 +1,4 @@
+/* section main screen */
 .first-section {
     background-image: url(assets/main-bg.jpg);
     background-size: cover;
@@ -15,6 +16,9 @@
     font-size: 15px;
 }
 
+.title-custom:hover {
+    color: #FFB548 !important;
+}
 
 .content-first-section {
     display: flex;
@@ -67,3 +71,5 @@
     color: white;
     text-transform: uppercase;
 }
+
+/* end mainscreen */
