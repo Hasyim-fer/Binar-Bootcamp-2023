@@ -71,5 +71,43 @@
     color: white;
     text-transform: uppercase;
 }
-
 /* end mainscreen */
+/* section game options */
+.second-section {
+    background-image: url(assets/the-games-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16rem 6rem 0rem 6rem;
+}
+
+.title-the-games {
+    color: white;
+}
+
+.title-the-games h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.title-the-games p {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+}
+
+div.slideshow {
+    margin-top: 4.1em;
+}
+
+.carousel-custom img {
+    height: 29rem;
+    padding: 0em 6em;
+    width: 50rem;
+}
+
+.slideshow-custom {
+    width: 60rem;
+}
+/* end section game options */
