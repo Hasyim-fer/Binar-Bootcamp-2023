@@ -1,0 +1,69 @@
+.first-section {
+    background-image: url(assets/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 135.5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar-custom {
+    background-color: #000000c0;
+    text-transform: uppercase;
+    width: auto;
+    font-size: 15px;
+}
+
+
+.content-first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.content-first-section h1 {
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    margin-top: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.content-first-section p {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.btn-custom {
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #FFB548;
+    padding: 0.5em 3.5em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px 5px #0000005e;
+}
+
+.btn-custom:hover {
+    background-color: #ffa011;
+    color: white;
+}
+
+.btn-custom:active {
+    background-color: black;
+    color: #FFB548;
+    box-shadow: none;
+}
+.scroll-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 8rem;
+    color: white;
+    text-transform: uppercase;
+}
