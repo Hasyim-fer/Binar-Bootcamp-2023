@@ -1,3 +1,7 @@
+body {
+    font-family: Arial !important;
+}
+
 /* section main screen */
 .first-section {
     background-image: url(assets/main-bg.jpg);
@@ -154,7 +158,7 @@ div.slideshow {
     color: white;
 }
 
-.title {
+.step .title {
     line-height: 1.5em;
     text-transform: uppercase;
     color: #FFB548;
@@ -220,3 +224,56 @@ div.slideshow {
     background-color: #ffffff;
 }
 /* end game features */
+
+/* section system require */
+.fourth-section {
+    background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%),url(assets/requirements.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 135vh;
+    color: white;
+}
+
+.fourth-section .title {
+    padding-top: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container-requirement {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    margin-left: 3rem;
+    padding: 0 3rem;
+}
+
+.container-requirement h2 {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+table {
+    width: 40rem;
+}
+
+table.requirements td {
+    border: #97979775;
+    border-style: solid;
+    border-width: 1px;
+    padding: 15px;
+    width: 20rem;
+}
+
+.requirements h4 {
+    text-transform: uppercase;
+    color: #FFB548;
+    font-size: 1.5em;
+}
+
+.requirements p {
+    font-size: 1.2em;
+}
+/* end-section system require */
