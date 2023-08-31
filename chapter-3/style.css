@@ -85,10 +85,12 @@ body {
     height: 150vh;
     display: flex;
     justify-content: space-evenly;
-    padding: 16rem 6rem 0rem 6rem;
+    align-items: center;
 }
 
 .title-the-games {
+    margin-top: 17rem;
+    align-self: start;
     color: white;
 }
 
@@ -107,13 +109,13 @@ div.slideshow {
 }
 
 .carousel-custom img {
-    height: 29rem;
-    padding: 0em 6em;
+    height: 28rem;
+    padding: 0em 5em;
     width: 50rem;
 }
 
 .slideshow-custom {
-    width: 60rem;
+    width: 50rem;
 }
 /* end section game options */
 
@@ -414,7 +416,7 @@ table.requirements td {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 80%;
+    width: 75%;
     color: white;
 }
 
@@ -526,4 +528,86 @@ table.requirements td {
 .foot-second .left {
     text-transform: capitalize;
     opacity: 0.5;
+}
+
+
+
+/* responsive design */
+@media (max-width: 1462px) {
+    a.title-custom {
+        margin-right: 0px !important;
+        padding-right: 8px !important;
+    }
+
+    .first-section, .second-section, .third-section, .fourth-section, .fifth-section, .sixth-section {
+        background-position: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .first-section, .second-section, .third-section, .fourth-section, .fifth-section, .sixth-section {
+        background-position: center;
+        width: 113.5vw;
+    }
+    a.title-custom {
+        padding: 0.4250em !important;
+    }
+
+    .content-first-section h1 {
+        font-size: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .content-first-section p {
+        font-size: 1.3rem;
+    }
+
+    .btn-custom {
+        margin-top: 1.5rem;
+    }
+
+    /* second section */
+    .title-the-games p {
+        font-size: 1.3rem;
+    }
+
+    .title-the-games h2 {
+        font-size: 3.5rem;
+    }
+
+    .carousel-custom img {
+        height: 22rem;
+        padding: 0em 4.5em;
+    }
+
+    .slideshow-custom {
+        width: 45rem;
+    }
+
+    /* third section */
+    .box-features {
+        display: flex;
+        flex-direction: column;
+        padding-top: 12rem;
+        margin-left: 37rem;
+        margin-right: 10rem;
+        padding-bottom: 15rem;
+        color: white;
+        font-family: Arial;
+    }
+
+    /* fifth section */
+    .wrap-card {
+        width: 36rem;
+    }
+
+    /* sixth section */
+    .newsletter .skull {
+        margin-right: 1em;
+    }
+    
+    .newsletter .subscribe {
+        margin-left: 1em;
+    }
 }
