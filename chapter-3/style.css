@@ -633,6 +633,9 @@ table.requirements td {
     .box-features {
         margin-left: 32rem;
     }
+    .circle:after {
+        top: -33px;
+    }
 
     /* fourth section */
     .fourth-section {
@@ -685,6 +688,75 @@ table.requirements td {
 }
 
 @media (max-width: 768px) {
+    .first-section, .second-section, .third-section, .fourth-section, .fifth-section, .sixth-section {
+        width: 175vw;
+    }
+    
+    .content-first-section h1 {
+        font-size: 4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* second section */
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title-the-games {
+        margin-top: 0rem;
+        align-self: center;
+    }
+
+    .title-the-games h2 {
+        font-size: 4rem;
+    }
+
+    .title-the-games p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    
+    div.slideshow {
+        margin-top: 3em;
+    }
+
+    .slideshow-custom {
+        width: 45rem;
+    }
+
+    /* section features */
+    .box-features {
+        margin-left: 30rem;
+        margin-right: 5rem;
+    }
+
+    .circle:after {
+        top: -31px;
+    }
+
+    /* footer */
+    .email-button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-subs {
+        margin-top: 1em;
+        width: 11em;
+        height: 3em;
+    }
+
+    .skull .skull-img {
+        width: 19.8rem;
+        height: 36.4rem;
+    }
+}
+
+@media (max-width: 576px) {
     .first-section, .second-section, .third-section, .fourth-section, .fifth-section, .sixth-section {
         background: none;
     }
