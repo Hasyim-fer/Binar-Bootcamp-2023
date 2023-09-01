@@ -85,10 +85,12 @@ body {
     height: 150vh;
     display: flex;
     justify-content: space-evenly;
-    padding: 16rem 6rem 0rem 6rem;
+    align-items: center;
 }
 
 .title-the-games {
+    margin-top: 17rem;
+    align-self: start;
     color: white;
 }
 
@@ -107,13 +109,12 @@ div.slideshow {
 }
 
 .carousel-custom img {
-    height: 29rem;
-    padding: 0em 6em;
-    width: 50rem;
+    height: 28rem;
+    padding: 0em 5em;
 }
 
 .slideshow-custom {
-    width: 60rem;
+    width: 50rem;
 }
 /* end section game options */
 
@@ -414,7 +415,7 @@ table.requirements td {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 80%;
+    width: 75%;
     color: white;
 }
 
@@ -526,4 +527,237 @@ table.requirements td {
 .foot-second .left {
     text-transform: capitalize;
     opacity: 0.5;
+}
+
+
+
+/* responsive design */
+@media (max-width: 1462px) {
+    a.title-custom {
+        margin-right: 0px !important;
+        padding-right: 8px !important;
+    }
+
+    .first-section, .second-section, .third-section, .fourth-section, .fifth-section, .sixth-section {
+        background-position: center;
+    }
+
+    .box-features {
+        margin-left: 45rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .first-section, .second-section, .third-section, .fourth-section, .fifth-section, .sixth-section {
+        background-position: center;
+        width: 113.5vw;
+    }
+    a.title-custom {
+        padding: 0.4250em !important;
+    }
+
+    .content-first-section h1 {
+        font-size: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .content-first-section p {
+        font-size: 1.3rem;
+    }
+
+    .btn-custom {
+        margin-top: 1.5rem;
+    }
+
+    /* second section */
+    .title-the-games p {
+        font-size: 1.3rem;
+    }
+
+    .title-the-games h2 {
+        font-size: 3.5rem;
+    }
+
+    .carousel-custom img {
+        height: 22rem;
+        padding: 0em 4.5em;
+    }
+
+    .slideshow-custom {
+        width: 45rem;
+    }
+
+    /* third section */
+    .box-features {
+        margin-left: 37rem;
+    }
+
+    /* fifth section */
+    .wrap-card {
+        width: 36rem;
+    }
+
+    /* sixth section */
+    .newsletter .skull {
+        margin-right: 1em;
+    }
+    
+    .newsletter .subscribe {
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 992px) {
+    /* first section */
+    .first-section, .second-section, .third-section, .fourth-section, .fifth-section, .sixth-section {
+        width: 137.5vw;
+    }
+
+    .content-first-section h1 {
+        font-size: 4.5rem;
+    }
+
+    /* second section */
+    .title-the-games {
+        margin-top: 20rem;
+    }
+    .carousel-custom img {
+        height: 20rem;
+    }
+    .slideshow-custom {
+        width: 40rem;
+    }
+
+    /* third section */
+    .box-features {
+        margin-left: 32rem;
+    }
+    .circle:after {
+        top: -33px;
+    }
+
+    /* fourth section */
+    .fourth-section {
+        background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(0, 0, 0, 0.418) 3.36%, rgba(0, 0, 0, 0.548) 19.22%, #080A0B 99.74%),url(assets/requirements.png);
+        background-position: center;
+    }
+
+    /* fifth section */
+    .top-score {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 23rem;
+    }
+
+    .top-score h2, .top-score p {
+        text-align: center;
+    }
+
+    .box-card:nth-child(1) {
+        align-self: center;
+    }
+
+    /* sixth section */
+    .newsletter h2 {
+        font-size: 4em;
+        padding: 0.2em 0em;
+    }
+    
+    .newsletter p {
+        font-size: 0.9em;
+    }
+
+    .skull .skull-img {
+        width: 23.8rem;
+        height: 40.4rem;
+    }
+
+    .btn-subs {
+        width: 12em;
+    }
+
+    .foot-nav {
+        align-self: center;
+    }
+
+    .horizontal-line {
+        width: 63rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-section, .second-section, .third-section, .fourth-section, .fifth-section, .sixth-section {
+        width: 175vw;
+    }
+    
+    .content-first-section h1 {
+        font-size: 4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* second section */
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title-the-games {
+        margin-top: 0rem;
+        align-self: center;
+    }
+
+    .title-the-games h2 {
+        font-size: 4rem;
+    }
+
+    .title-the-games p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    
+    div.slideshow {
+        margin-top: 3em;
+    }
+
+    .slideshow-custom {
+        width: 45rem;
+    }
+
+    /* section features */
+    .box-features {
+        margin-left: 30rem;
+        margin-right: 5rem;
+    }
+
+    .circle:after {
+        top: -31px;
+    }
+
+    /* footer */
+    .email-button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-subs {
+        margin-top: 1em;
+        width: 11em;
+        height: 3em;
+    }
+
+    .skull .skull-img {
+        width: 19.8rem;
+        height: 36.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .first-section, .second-section, .third-section, .fourth-section, .fifth-section, .sixth-section {
+        background: none;
+    }
 }
