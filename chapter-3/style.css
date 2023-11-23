@@ -1,0 +1,252 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+button.btn {
+  height: 3.5em;
+  width: 15em;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav.navbar {
+  background-color: black;
+  opacity: 0.57;
+  padding: 23px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+section.main-page {
+  background-image: url(assets/main-bg.jpg);
+  height: 135vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.content {
+  color: white;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 2.5px;
+  word-spacing: 2px;
+  margin-bottom: 0.6em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  margin-bottom: 2.5em;
+}
+
+.scroll-down {
+  margin-bottom: 15px;
+}
+
+.scroll-down h6 {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* section 2 */
+section.game-choice {
+  background-image: url(assets/the-games-bg.jpg);
+  height: 130vh;
+  display: flex;
+}
+
+.game-choice .title {
+  align-self: flex-start;
+  margin-top: 10.5em;
+  margin-right: 1.5rem;
+  margin-left: 5.5rem;
+}
+
+.title {
+  color: white;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  margin-right: 0 !important;
+}
+
+.title h2 {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.title p {
+  font-size: 1.4rem;
+}
+
+.game-choice .img-slider {
+  margin-top: 13em;
+  max-width: 57rem;
+}
+
+.btn-left-slider {
+  position: absolute;
+  left: -85px;
+  box-sizing: border-box;
+}
+
+.btn-right-slider {
+  position: absolute;
+  right: -85px;
+}
+
+/* section 3 - features */
+section.features {
+  background-image: url(assets/features.jpg);
+  height: 125vh;
+  position: relative;
+}
+
+.features .container {
+  position: absolute;
+  width: 400px;
+  top: 180px;
+  right: 21%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.features .title {
+  margin-bottom: 50px;
+}
+
+.list-feature {
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  position: relative;
+}
+
+.features .list-feature h3 {
+  color: orange;
+  text-transform: uppercase;
+  line-height: 70px;
+  font-size: 25px;
+}
+
+.list-feature p {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 16px;
+}
+
+.list-feature ul li {
+  list-style-type: circle;
+  color: white;
+  font-size: 50px;
+}
+
+.list-feature ul li:first-child {
+  list-style-type: disc;
+}
+
+.list-feature ul li:before {
+  position: absolute;
+  left: 0;
+  top: 48px;
+  content: "";
+  height: 151px;
+  width: 0;
+  border: 1px solid #ffffff;
+}
+
+/* section 3 */
+section.requirements {
+  background-image: radial-gradient(closest-side at 55% 50%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.61), black), url(assets/requirements.png);
+  height: 137vh;
+  color: white;
+  padding-top: 140px;
+}
+
+.requirements .container {
+  margin-top: 40px;
+  width: 600px;
+  position: absolute;
+  left: 150px;
+}
+
+.requirements td {
+  padding: 15px;
+}
+
+.table-cstm {
+  margin-top: 30px;
+  opacity: 0.7;
+}
+
+.table-cstm h4 {
+  text-transform: uppercase;
+  color: orange;
+}
+
+/* responsive breakpoint */
+
+@media screen and (max-width: 992px) {
+  nav.navbar {
+    padding: 10px;
+  }
+  .nav-menu > *,
+  .container a.navbar-brand {
+    margin: 0 !important;
+  }
+
+  section.main-page {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  button.btn {
+    font-size: 0.7em;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 13em auto;
+    align-items: center;
+  }
+
+  .content h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-bottom: 0.6em;
+    font-weight: 700;
+  }
+
+  .content p {
+    font-size: 1em;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    margin-bottom: 2.5em;
+  }
+
+  div.skull img {
+    max-width: 50%;
+  }
+}
