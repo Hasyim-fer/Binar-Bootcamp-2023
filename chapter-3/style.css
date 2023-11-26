@@ -75,20 +75,20 @@ section.game-choice {
   background-image: url(assets/the-games-bg.jpg);
   height: 130vh;
   display: flex;
+  justify-content: center;
 }
 
 .game-choice .title {
   align-self: flex-start;
   margin-top: 10.5em;
-  margin-right: 1.5rem;
-  margin-left: 5.5rem;
+  margin-right: 15px;
+  margin-left: 5rem;
 }
 
 .title {
   color: white;
   letter-spacing: 3px;
   word-spacing: 4px;
-  margin-right: 0 !important;
 }
 
 .title h2 {
@@ -102,13 +102,13 @@ section.game-choice {
 
 .game-choice .img-slider {
   margin-top: 13em;
-  max-width: 57rem;
+  max-width: 50em;
+  margin-right: 6rem;
 }
 
 .btn-left-slider {
   position: absolute;
   left: -85px;
-  box-sizing: border-box;
 }
 
 .btn-right-slider {
@@ -175,9 +175,9 @@ section.features {
   border: 1px solid #ffffff;
 }
 
-/* section 3 */
+/* section 4 - requirement */
 section.requirements {
-  background-image: radial-gradient(closest-side at 55% 50%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.61), black), url(assets/requirements.png);
+  background-image: radial-gradient(34.26% 75% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #000000 99.74%), url(assets/requirements.png);
   height: 137vh;
   color: white;
   padding-top: 140px;
@@ -190,18 +190,255 @@ section.requirements {
   left: 150px;
 }
 
-.requirements td {
-  padding: 15px;
-}
-
 .table-cstm {
   margin-top: 30px;
-  opacity: 0.7;
+}
+
+.table-cstm tr td {
+  border: 1px solid rgba(255, 255, 255, 0.377);
+  padding: 15px;
 }
 
 .table-cstm h4 {
   text-transform: uppercase;
   color: orange;
+}
+
+/* section 5 */
+section.top-score {
+  background-image: url(assets/top-score-bg.png);
+  height: 130vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.scores {
+  /* max-width: 23.35em; */
+  max-width: 27.5%;
+}
+.scores p {
+  color: white;
+  word-spacing: 4px;
+}
+
+.card-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.card:first-child {
+  align-self: flex-end;
+}
+
+.card:nth-child(2) {
+  margin: 15px 0;
+}
+
+.card:last-child {
+  align-self: center;
+}
+
+.card-container .card {
+  color: white;
+  background-color: #1a1b1c;
+  border-radius: 10px;
+  padding: 10px 15px;
+  max-width: 450px;
+  height: 190px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 4.5fr 0.5fr;
+  grid-template-rows: 3.5fr 3fr 0.5fr;
+  grid-template-areas:
+    "image profile icon"
+    "quote quote ."
+    "date date .";
+  background-image: url(assets/ellipse-orange.png);
+  background-position: left 21.5px top 17px;
+  background-repeat: no-repeat;
+  background-size: 72px;
+}
+
+.card img.img-cstm {
+  grid-area: image;
+  width: 70px;
+}
+
+.profile {
+  grid-area: profile;
+  color: #757676;
+  align-items: center;
+}
+
+.profile h4 {
+  text-transform: capitalize;
+  color: orange;
+  margin-bottom: -3px;
+}
+
+.profile p {
+  margin: 0;
+}
+
+.twt-icon {
+  grid-area: icon;
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+.quotes {
+  grid-area: quote;
+  margin: 0;
+  font-size: 0.95em;
+}
+
+.dates {
+  grid-area: date;
+  color: #848484;
+  font-size: 0.8em;
+}
+
+/* newsletter */
+section.newsletter {
+  background-image: url(assets/newsletter.png);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.skull {
+  width: 40%;
+}
+
+.skull-img {
+  margin: auto;
+  height: 650px;
+  width: 410px;
+  background: radial-gradient(59% 63% at 50% 50%, #00000000 0%, #00000000 42%, #080a0b 99.74%), url(assets/skull.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subscribe {
+  width: 47%;
+  align-self: center;
+  color: white;
+  word-spacing: 3px;
+  line-height: 25px;
+}
+
+.subscribe .title {
+  margin: 33px 0;
+}
+
+.subscribe h4 {
+  width: 200px;
+}
+
+.subscribe p {
+  color: rgba(255, 255, 255, 0.781);
+}
+
+.subscribe .form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe label {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.subscribe input {
+  width: 60%;
+  height: 3.5em;
+  display: inline-block;
+  background-color: #1b1d1e;
+  border: none;
+  margin-right: 15px;
+}
+
+.subscribe input::placeholder {
+  color: orange;
+}
+
+footer {
+  background-image: url(assets/newsletter.png);
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+footer .foot-menu {
+  width: 90%;
+}
+
+.foot-menu ul {
+  display: flex;
+  justify-content: end;
+}
+
+.foot-menu li {
+  list-style: none;
+}
+
+.foot-menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.foot-menu li path {
+  color: red;
+}
+
+ul .menu-list,
+ul .icon-list {
+  display: flex;
+}
+
+ul .menu-list {
+  width: 50%;
+  margin-right: 8%;
+  justify-content: space-evenly;
+}
+
+ul .icon-list {
+  width: 25%;
+  justify-content: space-evenly;
+}
+
+div.line-footer {
+  position: absolute;
+  left: 85px;
+  right: 85px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+div.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 85%;
+  color: white;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+}
+
+.bottom p {
+  margin: 0;
+}
+
+.bottom .copyright {
+  color: hsla(0, 0%, 100%, 0.7);
+  text-transform: capitalize;
 }
 
 /* responsive breakpoint */
@@ -221,6 +458,11 @@ section.requirements {
 }
 
 @media screen and (max-width: 576px) {
+  section {
+    height: 100vh;
+    overflow: hidden;
+  }
+
   button.btn {
     font-size: 0.7em;
   }
@@ -246,7 +488,190 @@ section.requirements {
     margin-bottom: 2.5em;
   }
 
-  div.skull img {
-    max-width: 50%;
+  .title {
+    color: white;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+  }
+
+  .title h2 {
+    font-size: 3.5rem;
+  }
+
+  .title p {
+    font-size: 1rem;
+  }
+
+  /* section2 */
+  .game-choice {
+    background-position: -170px;
+    flex-direction: column;
+  }
+
+  .game-choice .title {
+    margin: 0 auto;
+  }
+
+  .game-choice .img-slider {
+    margin: 33px;
+  }
+
+  .btn-left-slider {
+    left: -42px;
+  }
+
+  .btn-right-slider {
+    right: -42px;
+  }
+
+  /* section 3 */
+  .features {
+    background-position: -105px;
+  }
+
+  .features .container {
+    width: 350px;
+    top: 150px;
+    right: 13%;
+  }
+
+  .features .title {
+    margin-bottom: 15px;
+  }
+
+  .list-feature p {
+    margin-bottom: 6px;
+  }
+
+  /* section 4 */
+  .requirements {
+    background-position: 15px right;
+  }
+
+  .requirements .container {
+    width: 98%;
+    left: 0;
+  }
+
+  .requirements .title h2 {
+    font-size: 3.1rem;
+  }
+
+  .table-cstm {
+    margin-top: 55px;
+  }
+
+  .table-cstm tr td {
+    padding: 5px;
+  }
+
+  /* section 5 */
+  .top-score {
+    flex-direction: column;
+    justify-content: space-evenly !important;
+  }
+
+  .scores {
+    max-width: 95%;
+    text-align: center;
+  }
+
+  .card-container {
+    width: 95%;
+  }
+
+  /* section 6 */
+  .newsletter {
+    align-items: center;
+  }
+
+  .skull {
+    width: 0;
+  }
+
+  .skull-img {
+    margin: auto;
+    height: 550px;
+    width: 300px;
+    background: radial-gradient(59% 63% at 50% 50%, #00000000 0%, rgba(0, 0, 0, 0.5) 2%, #080a0b 99.74%), url(assets/skull.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-bottom: 3em;
+  }
+
+  .subscribe {
+    width: 95%;
+    align-self: center;
+    color: white;
+    word-spacing: 1.5px;
+    line-height: normal;
+  }
+
+  .subscribe h4 {
+    width: 100%;
+  }
+
+  .subscribe .form {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .subscribe input {
+    width: 90%;
+  }
+
+  .subscribe button {
+    margin-top: 10px;
+  }
+
+  /* footer */
+  footer {
+    height: 50vh;
+    position: relative;
+    margin-top: -30px;
+    padding-bottom: 100px;
+    font-weight: 700;
+    letter-spacing: normal;
+    font-size: 0.65rem;
+  }
+
+  footer .foot-menu {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .foot-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  ul .menu-list {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  ul .icon-list {
+    width: 70%;
+  }
+
+  div.line-footer {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  div.bottom {
+    margin-top: 20px;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: normal;
   }
 }

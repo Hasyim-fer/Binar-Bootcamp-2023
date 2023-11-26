@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chapter 3</title>
+    <link rel="icon" href="assets/icon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
 
@@ -43,7 +44,9 @@
       </div>
       <div class="scroll-down text-center">
         <h6>the story</h6>
-        <img src="assets/scroll-down.svg" alt="" width="30" />
+        <a href="#about">
+          <img src="assets/scroll-down.svg" alt="" width="30" />
+        </a>
       </div>
     </section>
     <!-- gameplay option-->
@@ -146,17 +149,19 @@
     </section>
     <!-- top score -->
     <section class="top-score" id="quotes">
-      <div class="score">
-        <h2>top scores</h2>
+      <div class="scores">
+        <div class="title">
+          <h2>top scores</h2>
+        </div>
         <p>This top score from various games provided on this platform</p>
         <button class="btn btn-warning">see more</button>
       </div>
       <div class="card-container">
         <div class="card">
-          <img src="assets/evan-lahti.jpg" alt="evan" class="rounded-circle" width="100" />
+          <img src="assets/evan-lahti.jpg" alt="evan" class="rounded-circle img-cstm" />
           <div class="profile">
-            <h5>evan lathi</h5>
-            <p>PC gamer</p>
+            <h4>evan lathi</h4>
+            <p>PC Gamer</p>
           </div>
           <div class="twt-icon">
             <img src="assets/twitter-card.png" alt="twt-icon" />
@@ -165,10 +170,10 @@
           <div class="dates">June 18, 2021</div>
         </div>
         <div class="card">
-          <img src="assets/jada-griffin.jpg" alt="jada" class="rounded-circle" width="100" />
+          <img src="assets/jada-griffin.jpg" alt="jada" class="rounded-circle img-cstm" />
           <div class="profile">
-            <h5>jada griffin</h5>
-            <p>nerdreactor</p>
+            <h4>jada griffin</h4>
+            <p>Nerdreactor</p>
           </div>
           <div class="twt-icon">
             <img src="assets/twitter-card.png" alt="twt-icon" />
@@ -177,10 +182,10 @@
           <div class="dates">July, 10, 2021</div>
         </div>
         <div class="card">
-          <img src="assets/aaron-williams.jpg" alt="harun" class="rounded-circle" width="100" />
+          <img src="assets/aaron-williams.jpg" alt="harun" class="rounded-circle img-cstm" />
           <div class="profile">
-            <h5>aaoron williams</h5>
-            <p>uproxx</p>
+            <h4>aaoron williams</h4>
+            <p>Uproxx</p>
           </div>
           <div class="twt-icon">
             <img src="assets/twitter-card.png" alt="twt-icon" />
@@ -190,27 +195,36 @@
         </div>
       </div>
     </section>
-    <!-- footer / contact -->
-    <footer>
+    <!-- newsletter -->
+    <section class="newsletter">
       <div class="skull">
-        <img src="assets/skull.png" alt="skull" />
+        <div class="skull-img"></div>
       </div>
-      <div class="newsletter">
-        <h5>Want to stay in touch?</h5>
-        <h2>newsletter subscribe</h2>
+      <div class="subscribe">
+        <h4>Want to stay in touch?</h4>
+        <div class="title">
+          <h2>newsletter subscribe</h2>
+        </div>
         <p>In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don't spam.</p>
-        <label for="exampleFormControlInput1" class="form-label">Your Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@example.com" />
-        <button class="btn btn-warning">subscribe now</button>
+        <label for="inputEmail" class="form-label">Your Email address</label>
+        <div class="form">
+          <input type="email" class="form-control" id="inputEmail" placeholder="youremail@example.com" />
+          <button class="btn btn-warning">subscribe now</button>
+        </div>
       </div>
-      <div class="footer">
-        <div class="foot-menu">
-          <ul>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="foot-menu">
+        <ul>
+          <div class="menu-list">
             <li><a href="#main-page">main</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#features">game features</a></li>
             <li><a href="#requirements">system requirements</a></li>
             <li><a href="#quotes">quotes</a></li>
+          </div>
+          <div class="icon-list">
             <li>
               <a href="https://web.facebook.com/" target="_blank">
                 <img src="assets/facebook.svg" alt="" />
@@ -223,7 +237,7 @@
             </li>
             <li>
               <a href="https://www.youtube.com/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 17 17">
                   <path
                     d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
                   />
@@ -235,20 +249,21 @@
                 <img src="assets/twitch.svg" alt="" />
               </a>
             </li>
-          </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="line-footer"></div>
+      <div class="bottom">
+        <div class="copyright">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+            <path
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
+            />
+          </svg>
+          <p class="d-inline">2018 Your Games, Inc. All Right Reserved</p>
         </div>
-        <div class="bottom">
-          <div class="copyright">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
-              <path
-                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
-              />
-            </svg>
-            <p class="d-inline">2018 Your Games, Inc. All Right Reserved</p>
-          </div>
-          <div>
-            <p>privacy policy | terms of services | code of conduct</p>
-          </div>
+        <div>
+          <p>privacy policy | terms of services | code of conduct</p>
         </div>
       </div>
     </footer>
