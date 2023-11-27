@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chapter 3</title>
+    <link rel="icon" href="assets/icon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar / main menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand col-md-2 ms-4" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-md-9" id="navbarNavAltMarkup">
+          <div class="navbar-nav nav-menu">
+            <a class="nav-link active ms-2 me-4" aria-current="page" href="#">Home</a>
+            <a class="nav-link mx-4" href="#">Work</a>
+            <a class="nav-link mx-4" href="#">Contact</a>
+            <a class="nav-link mx-4" href="#">about me</a>
+          </div>
+          <div class="navbar-nav ms-auto nav-menu">
+            <a class="nav-link me-4" href="#">sign up</a>
+            <a class="nav-link ms-4 me-4" href="#">login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- main call to action -->
+    <section class="main-page" id="main-page">
+      <div class="content">
+        <h1>play traditional game</h1>
+        <p>experience new traditional game play</p>
+        <button class="btn btn-warning">play now</button>
+      </div>
+      <div class="scroll-down text-center">
+        <h6>the story</h6>
+        <a href="#about">
+          <img src="assets/scroll-down.svg" alt="" width="30" />
+        </a>
+      </div>
+    </section>
+    <!-- gameplay option-->
+    <section class="game-choice" id="about">
+      <div class="title">
+        <p>What's so special?</p>
+        <h2>the games</h2>
+      </div>
+      <div class="img-slider">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev btn-left-slider" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <img src="assets/switch-left.svg" alt="" />
+          </button>
+          <button class="carousel-control-next btn-right-slider" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <img src="assets/switch-right.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- game features -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="title">
+          <p>What's so special?</p>
+          <h2>features</h2>
+        </div>
+        <div class="list-feature">
+          <ul>
+            <li>
+              <h3>traditional games</h3>
+              <p>If you miss your childhood, we provide many traditional games here</p>
+            </li>
+            <li>
+              <h3>game suit</h3>
+            </li>
+            <li>
+              <h3>tbd</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- system requirements -->
+    <section class="requirements" id="requirements">
+      <p class="text-center">can my computer run this game?</p>
+      <div class="container">
+        <div class="title">
+          <h2>system requirements</h2>
+        </div>
+        <table class="table-bordered table-cstm">
+          <tbody>
+            <tr>
+              <td>
+                <h4>os:</h4>
+                <p>Windows 7 64-bit only (No OSX support at this time)</p>
+              </td>
+              <td>
+                <h4>processor:</h4>
+                <p>Intel Core 2 Duo @ 2.4 GHz or AMD Athlon X2 @ 2.8 GHz</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>memory:</h4>
+                <p>4GB RAM</p>
+              </td>
+              <td>
+                <h4>storage:</h4>
+                <p>8GB available space</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h4>graphics:</h4>
+                <p>
+                  Nvidia GForce GTX 660 2GB or <br />
+                  AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- top score -->
+    <section class="top-score" id="quotes">
+      <div class="scores">
+        <div class="title">
+          <h2>top scores</h2>
+        </div>
+        <p>This top score from various games provided on this platform</p>
+        <button class="btn btn-warning">see more</button>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="assets/evan-lahti.jpg" alt="evan" class="rounded-circle img-cstm" />
+          <div class="profile">
+            <h4>evan lathi</h4>
+            <p>PC Gamer</p>
+          </div>
+          <div class="twt-icon">
+            <img src="assets/twitter-card.png" alt="twt-icon" />
+          </div>
+          <p class="quotes">"One of my gaming highlights of the year."</p>
+          <div class="dates">June 18, 2021</div>
+        </div>
+        <div class="card">
+          <img src="assets/jada-griffin.jpg" alt="jada" class="rounded-circle img-cstm" />
+          <div class="profile">
+            <h4>jada griffin</h4>
+            <p>Nerdreactor</p>
+          </div>
+          <div class="twt-icon">
+            <img src="assets/twitter-card.png" alt="twt-icon" />
+          </div>
+          <p class="quotes">"The next big thing in the world of streaming and survival games."</p>
+          <div class="dates">July, 10, 2021</div>
+        </div>
+        <div class="card">
+          <img src="assets/aaron-williams.jpg" alt="harun" class="rounded-circle img-cstm" />
+          <div class="profile">
+            <h4>aaoron williams</h4>
+            <p>Uproxx</p>
+          </div>
+          <div class="twt-icon">
+            <img src="assets/twitter-card.png" alt="twt-icon" />
+          </div>
+          <p class="quotes">"Snoop Dogg playing the wildly entertaining 'SOS' is ridiculous."</p>
+          <div class="dates">December 24, 2018</div>
+        </div>
+      </div>
+    </section>
+    <!-- newsletter -->
+    <section class="newsletter">
+      <div class="skull">
+        <div class="skull-img"></div>
+      </div>
+      <div class="subscribe">
+        <h4>Want to stay in touch?</h4>
+        <div class="title">
+          <h2>newsletter subscribe</h2>
+        </div>
+        <p>In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don't spam.</p>
+        <label for="inputEmail" class="form-label">Your Email address</label>
+        <div class="form">
+          <input type="email" class="form-control" id="inputEmail" placeholder="youremail@example.com" />
+          <button class="btn btn-warning">subscribe now</button>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="foot-menu">
+        <ul>
+          <div class="menu-list">
+            <li><a href="#main-page">main</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#features">game features</a></li>
+            <li><a href="#requirements">system requirements</a></li>
+            <li><a href="#quotes">quotes</a></li>
+          </div>
+          <div class="icon-list">
+            <li>
+              <a href="https://web.facebook.com/" target="_blank">
+                <img src="assets/facebook.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank">
+                <img src="assets/twitter.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 17 17">
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitch.tv/" target="_blank">
+                <img src="assets/twitch.svg" alt="" />
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="line-footer"></div>
+      <div class="bottom">
+        <div class="copyright">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+            <path
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
+            />
+          </svg>
+          <p class="d-inline">2018 Your Games, Inc. All Right Reserved</p>
+        </div>
+        <div>
+          <p>privacy policy | terms of services | code of conduct</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
