@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  height: 100vh;
+  background: #9c835f;
+}
+
+.navigation {
+  width: 570px;
+  margin-left: 5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-btn a {
+  color: #724c21;
+  text-decoration: none;
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0 15px;
+}
+
+.title {
+  font-size: 1.5em;
+  color: #f9b23d;
+}
+
+.title h2 {
+  margin: 0;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.box-choice {
+  display: grid;
+  gap: 10px;
+}
+
+.box-choice img {
+  width: 65%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.box-choice .box {
+  width: 165px;
+  height: 165px;
+  /* border: 1px solid white; */
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+}
+
+.name {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.game {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-game {
+  align-self: center;
+  font-size: 6.5em;
+  font-weight: 700;
+  color: #bd0000;
+
+  display: grid;
+  justify-items: center;
+}
+
+.middle-game img {
+  position: absolute;
+  width: 75px;
+  bottom: 5%;
+}
