@@ -27,7 +27,7 @@ body {
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #f9b23d;
 }
 
@@ -87,4 +87,130 @@ body {
   position: absolute;
   width: 75px;
   bottom: 5%;
+}
+
+/* responsive breakpoint */
+@media screen and (max-width: 992px) {
+  .navigation {
+    width: 450px;
+    margin-left: 0;
+  }
+
+  .back-btn a {
+    font-size: 65px;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .name {
+    font-size: 1.8em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .game {
+    width: 65%;
+  }
+
+  .middle-game {
+    font-size: 5.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    width: 400px;
+  }
+
+  .back-btn a {
+    font-size: 60px;
+    margin: 0 10px;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+  .logo img {
+    width: 55px;
+  }
+
+  .box-choice img {
+    width: 60%;
+  }
+
+  .box-choice .box {
+    width: 160px;
+    height: 160px;
+  }
+
+  .name {
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .game {
+    width: 75%;
+  }
+
+  .middle-game {
+    font-size: 5em;
+  }
+
+  .middle-game img {
+    width: 65px;
+    bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navigation {
+    width: 330px;
+    padding-top: 5px;
+  }
+
+  .back-btn a {
+    font-size: 45px;
+    margin: 0 5px;
+  }
+
+  .title {
+    font-size: 0.9em;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .box-choice img {
+    width: 55%;
+  }
+
+  .box-choice .box {
+    width: 145px;
+    height: 145px;
+  }
+
+  .name {
+    font-size: 1.3em;
+  }
+
+  .game {
+    width: 95%;
+  }
+
+  .middle-game {
+    font-size: 3.5em;
+  }
+
+  .middle-game img {
+    width: 60px;
+  }
 }
