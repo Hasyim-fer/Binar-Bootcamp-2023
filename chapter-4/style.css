@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  height: 100vh;
+  background: #9c835f;
+}
+
+.navigation {
+  width: 570px;
+  margin-left: 5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-btn a {
+  color: #724c21;
+  text-decoration: none;
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0 15px;
+}
+
+.title {
+  font-size: 1.4em;
+  color: #f9b23d;
+}
+
+.title h2 {
+  margin: 0;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.box-choice {
+  display: grid;
+  gap: 10px;
+}
+
+.box-choice img {
+  width: 65%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.box-choice .box {
+  width: 165px;
+  height: 165px;
+  /* border: 1px solid white; */
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+}
+
+.name {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.game {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-game {
+  align-self: center;
+  font-size: 6.5em;
+  font-weight: 700;
+  color: #bd0000;
+
+  display: grid;
+  justify-items: center;
+}
+
+.middle-game img {
+  position: absolute;
+  width: 75px;
+  bottom: 5%;
+}
+
+/* responsive breakpoint */
+@media screen and (max-width: 992px) {
+  .navigation {
+    width: 450px;
+    margin-left: 0;
+  }
+
+  .back-btn a {
+    font-size: 65px;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .name {
+    font-size: 1.8em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .game {
+    width: 65%;
+  }
+
+  .middle-game {
+    font-size: 5.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    width: 400px;
+  }
+
+  .back-btn a {
+    font-size: 60px;
+    margin: 0 10px;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+  .logo img {
+    width: 55px;
+  }
+
+  .box-choice img {
+    width: 60%;
+  }
+
+  .box-choice .box {
+    width: 160px;
+    height: 160px;
+  }
+
+  .name {
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .game {
+    width: 75%;
+  }
+
+  .middle-game {
+    font-size: 5em;
+  }
+
+  .middle-game img {
+    width: 65px;
+    bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navigation {
+    width: 330px;
+    padding-top: 5px;
+  }
+
+  .back-btn a {
+    font-size: 45px;
+    margin: 0 5px;
+  }
+
+  .title {
+    font-size: 0.9em;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .box-choice img {
+    width: 55%;
+  }
+
+  .box-choice .box {
+    width: 145px;
+    height: 145px;
+  }
+
+  .name {
+    font-size: 1.3em;
+  }
+
+  .game {
+    width: 95%;
+  }
+
+  .middle-game {
+    font-size: 3.5em;
+  }
+
+  .middle-game img {
+    width: 60px;
+  }
+}
