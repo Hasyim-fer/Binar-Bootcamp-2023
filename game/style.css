@@ -2,9 +2,6 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-}
-
-.container {
   height: 100vh;
   background: #9c835f;
 }

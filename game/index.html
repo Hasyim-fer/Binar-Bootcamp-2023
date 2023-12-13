@@ -8,58 +8,57 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="navigation">
-        <div class="back-btn">
-          <a href="../landingpage/index.html">&lt;</a>
-        </div>
-        <div class="logo">
-          <img src="assets/logo.png" alt="logo" />
-        </div>
-        <div class="title">
-          <h2>rock paper scissors</h2>
+    <div class="navigation">
+      <div class="back-btn">
+        <a href="../landingpage/index.html">&lt;</a>
+      </div>
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" />
+      </div>
+      <div class="title">
+        <h2>rock paper scissors</h2>
+      </div>
+    </div>
+    <div class="game">
+      <div class="player">
+        <h3 class="name">player</h3>
+        <div class="box-choice">
+          <div class="rock box" id="rock-player">
+            <img src="assets/batu.png" alt="rock" />
+          </div>
+          <div class="paper box" id="paper-player">
+            <img src="assets/kertas.png" alt="paper" />
+          </div>
+          <div class="scissors box" id="scissors-player">
+            <img src="assets/gunting.png" alt="scissor" />
+          </div>
         </div>
       </div>
-      <div class="game">
-        <div class="player">
-          <h3 class="name">player</h3>
-          <div class="box-choice">
-            <div class="rock box" id="rock-player">
-              <img src="assets/batu.png" alt="rock" />
-            </div>
-            <div class="paper box" id="paper-player">
-              <img src="assets/kertas.png" alt="paper" />
-            </div>
-            <div class="scissors box" id="scissors-player">
-              <img src="assets/gunting.png" alt="scissor" />
-            </div>
-          </div>
+      <div class="middle-game">
+        <div class="versus">vs</div>
+        <div class="result">
+          <div class="draw" id="draw">draw</div>
+          <div class="win" id="win">you win</div>
+          <div class="lose" id="lose">you lose</div>
         </div>
-        <div class="middle-game">
-          <div class="versus">vs</div>
-          <div class="result">
-            <div class="draw" id="draw">draw</div>
-            <div class="win" id="win">you win</div>
-            <div class="lose" id="lose">you lose</div>
+        <img src="assets/refresh.png" alt="resfresh-button" id="refresh-game" />
+      </div>
+      <div class="com">
+        <h3 class="name">com</h3>
+        <div class="box-choice">
+          <div class="rock box" id="rock-com">
+            <img src="assets/batu.png" alt="rock" />
           </div>
-          <img src="assets/refresh.png" alt="resfresh-button" id="refresh-game" />
-        </div>
-        <div class="com">
-          <h3 class="name">com</h3>
-          <div class="box-choice">
-            <div class="rock box" id="rock-com">
-              <img src="assets/batu.png" alt="rock" />
-            </div>
-            <div class="paper box" id="paper-com">
-              <img src="assets/kertas.png" alt="paper" />
-            </div>
-            <div class="scissors box" id="scissors-com">
-              <img src="assets/gunting.png" alt="scissor" />
-            </div>
+          <div class="paper box" id="paper-com">
+            <img src="assets/kertas.png" alt="paper" />
+          </div>
+          <div class="scissors box" id="scissors-com">
+            <img src="assets/gunting.png" alt="scissor" />
           </div>
         </div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
