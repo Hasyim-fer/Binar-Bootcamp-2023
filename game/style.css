@@ -75,18 +75,61 @@ body {
 
 .middle-game {
   align-self: center;
-  font-size: 6.5em;
-  font-weight: 700;
-  color: #bd0000;
-
   display: grid;
   justify-items: center;
+  font-weight: 700;
+}
+
+.versus {
+  font-size: 6.5em;
+  color: #bd0000;
 }
 
 .middle-game img {
   position: absolute;
   width: 75px;
   bottom: 5%;
+}
+
+.middle-game img:active {
+  transform: rotate(-90deg);
+  transition: 100ms;
+}
+
+.result {
+  position: absolute;
+  transform: rotate(-28deg);
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+/* result game */
+
+.draw,
+.win,
+.lose {
+  display: none;
+  place-items: center;
+  width: 11.25em;
+  height: 6.9em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px black;
+  color: white;
+  position: absolute;
+  top: -20px;
+  left: -170px;
+}
+
+.draw {
+  color: black;
+  background-color: #f9b23d;
+}
+
+.win {
+  background-color: #035b0c;
+}
+.lose {
+  background-color: red;
 }
 
 /* responsive breakpoint */
@@ -118,8 +161,19 @@ body {
     width: 65%;
   }
 
-  .middle-game {
+  .versus {
     font-size: 5.5em;
+  }
+
+  .result {
+    font-size: 1.35rem;
+  }
+
+  .draw,
+  .win,
+  .lose {
+    top: -25px;
+    left: -150px;
   }
 }
 
@@ -160,13 +214,24 @@ body {
     width: 75%;
   }
 
-  .middle-game {
+  .versus {
     font-size: 5em;
   }
 
   .middle-game img {
     width: 65px;
     bottom: 3%;
+  }
+
+  .result {
+    font-size: 1.25rem;
+  }
+
+  .draw,
+  .win,
+  .lose {
+    top: -20px;
+    left: -140px;
   }
 }
 
@@ -206,11 +271,22 @@ body {
     width: 95%;
   }
 
-  .middle-game {
+  .versus {
     font-size: 3.5em;
   }
 
   .middle-game img {
     width: 60px;
+  }
+
+  .result {
+    font-size: 1.15rem;
+  }
+
+  .draw,
+  .win,
+  .lose {
+    top: -30px;
+    left: -120px;
   }
 }
