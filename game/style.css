@@ -56,6 +56,11 @@ body {
   border-radius: 20px;
 }
 
+.player .box-choice .box,
+.middle-game img {
+  cursor: pointer;
+}
+
 .name {
   font-size: 2em;
   text-align: center;
