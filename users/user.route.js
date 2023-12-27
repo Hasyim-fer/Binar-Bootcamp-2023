@@ -1,5 +1,4 @@
 const express = require("express");
-const userModel = require("./user.model");
 const userController = require("./user.controller");
 const userRouter = express.Router();
 
@@ -13,6 +12,6 @@ userRouter.post("/data", userController.getUserByUsername);
 userRouter.post("/register", userController.registerNewUser);
 
 // API to Login
-userRouter.get("/login", userController.loginExistUser);
+userRouter.get("/login", userController.loginExistingUser);
 
 module.exports = userRouter;
