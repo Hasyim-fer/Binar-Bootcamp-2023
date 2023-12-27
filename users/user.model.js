@@ -5,7 +5,9 @@ const {Op} = require("sequelize");
 class UserModel {
   // get all users data
   getAllUsers = () => {
-    return database.user_game.findAll();
+    return database.user_game.findAll({
+      include: [database.user_game_biodata],
+    });
     // SELECT * FROM user_game
   };
 
@@ -33,6 +35,10 @@ class UserModel {
     return passwordUser;
   };
 
+  getUserById = (id) => {
+    return database.user_game.findOne({where: {id: id}});
+  };
+
   // add new data to data source
   addNewUser = (username, email, password) => {
     database.user_game.create({
@@ -51,6 +57,56 @@ class UserModel {
       },
     });
     return existUser;
+  };
+
+  findUserIdBio = (userId) => {
+    return database.user_game_biodata.findOne({where: {userId: userId}});
+  };
+
+  updateBiodata = (userId, dataBody) => {
+    const update = database.user_game_biodata.update(
+      {
+        fullname: dataBody.fullname,
+        phone: dataBody.phone,
+        birth: dataBody.birth,
+        address: dataBody.address,
+        gender: dataBody.gender,
+      },
+      {
+        where: {userId: userId},
+      }
+    );
+    return update;
+  };
+
+  createBiodata = (userId, dataBody) => {
+    const create = database.user_game_biodata.create(
+      {
+        fullname: dataBody.fullname,
+        phone: dataBody.phone,
+        birth: dataBody.birth,
+        gender: dataBody.gender,
+        userId: userId,
+      },
+      {
+        where: {userId: userId},
+      }
+    );
+    return create;
+  };
+
+  getGameHistories = (id) => {
+    return database.user_game.findAll({
+      include: [database.user_game_history],
+      where: {id: id},
+    });
+  };
+
+  createGameHistory = (id, status) => {
+    return database.user_game_history.create({
+      userId: id,
+      status,
+    });
   };
 }
 
