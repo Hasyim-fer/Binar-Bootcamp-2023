@@ -1,14 +1,14 @@
 const userModel = require("./user.model");
 
 class UserController {
-  getAllUsers = (req, res) => {
-    const allUsers = userModel.getAllUsers();
+  getAllUsers = async (req, res) => {
+    const allUsers = await userModel.getAllUsers();
     res.json(allUsers);
   };
 
-  getUserByUsername = (req, res) => {
+  getUserByUsername = async (req, res) => {
     const {username} = req.body;
-    const sortedData = userModel.getUsername(username);
+    const sortedData = await userModel.getUsername(username);
     if (!sortedData) {
       res.statusCode = 404;
       res.json({message: `user whith username ${username} is not exist!`});
@@ -17,39 +17,43 @@ class UserController {
     }
   };
 
-  registerNewUser = (req, res) => {
-    const requestData = req.body;
+  registerNewUser = async (req, res) => {
+    const {username, email, password} = req.body;
     // validation data (data must be enter/data cannot be empty)
-    if (requestData.username === undefined || requestData.username === "" || requestData.email === undefined || requestData.email === "" || requestData.password === undefined || requestData.password === "") {
+    if (username === undefined || username === "" || email === undefined || email === "" || password === undefined || password === "") {
       return res.json({message: "enter the data corectly, cannot be empty!"});
     }
 
     // username & email must not be the same as another user
-    const availableData = userModel.dataIsUsed(requestData);
-    if (availableData) {
+    const availableUsername = await userModel.getUsername(username);
+    const availableEmail = await userModel.getExistingEmail(email);
+    if (availableUsername) {
       res.statusCode = 406;
-      return res.json({message: "username or email has been used, try another one!"});
+      return res.json({message: `username : ${username} has been used, try another one!`});
+    } else if (availableEmail) {
+      res.statusCode = 406;
+      return res.json({message: `email : ${email} has been used, try another one!`});
     }
 
-    userModel.addNewUser(requestData);
-    res.json({message: `username ${requestData.username} successfully registered as New User`});
+    userModel.addNewUser(username, email, password);
+    res.json({message: `${username} successfully registered as New User`});
   };
 
-  loginExistUser = (req, res) => {
+  loginExistingUser = async (req, res) => {
     const {email, password} = req.body;
     // validation data (data must be enter/data cannot be empty)
     if (email === undefined || email === "" || password === undefined || password === "") {
       return res.json({message: "enter the data corectly, data cannot be empty!"});
     }
     // looking for the same email & password as the email & password from req.body
-    const sortedData = userModel.getExistingUser(email, password);
+    const sortedData = await userModel.getExistingUser(email, password);
     if (!sortedData) {
-      const emailUser = userModel.getExistingEmail(email);
-      const passwordUser = userModel.getPasswordUser(password);
+      const emailExist = await userModel.getExistingEmail(email);
+      const passwordExist = await userModel.getExistingPassword(password);
       res.statusCode = 401;
-      if (!emailUser) {
+      if (!emailExist) {
         return res.json({message: `Login Failed: email ${email} is not registered!`});
-      } else if (!passwordUser) {
+      } else if (!passwordExist) {
         return res.json({message: `Login Failed: password incorrect!`});
       }
     } else {
